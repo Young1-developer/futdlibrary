@@ -1,0 +1,118 @@
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background: url('https://images.unsplash.com/photo-1507842217343-583bb7270b66') center/cover;
+    padding: 8rem 0;
+    color: var(--text-light);
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(139, 0, 0, 0.7);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Staff Section */
+.staff-card {
+    background: #fff;
+    border: 4px solid  darkred;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    animation: appear2 linear;
+    animation-timeline: view();
+    animation-range: entry cover 30%;
+}
+
+.staff-card:hover {
+    transform: translateY(-5px);
+}
+
+.staff-img-wrapper {
+    position: relative;
+    padding-top: 100%;
+    overflow: hidden;
+}
+
+.staff-img {
+    position: absolute;
+    border: 4px solid darkred;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.staff-card .card-title {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin: 0;
+}
+
+.staff-card .card-subtitle {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.staff-social {
+    margin-top: 1rem;
+}
+
+.staff-social a {
+    color: var(--primary-color);
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.staff-social a:hover {
+    color: var(--primary-dark);
+}
+
+
+/* Responsive Design */
+@media (max-width: 991.98px) {
+    .navbar-nav {
+        padding: 1rem 0;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hero {
+        padding: 6rem 0;
+    }
+    
+    .staff-card {
+        margin-bottom: 2rem;
+    }
+}

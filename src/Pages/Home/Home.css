@@ -1,0 +1,375 @@
+
+/* Carousel */
+.carousel-item {
+    height: 600px;
+  }
+  
+  .carousel-image {
+    height: 100%;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+  }
+  
+  .carousel-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .slide1 {
+    background-image:  url('../../images/futd-vc.jpg');
+  }
+  
+  .slide2 {
+    background-image: url('../../images/futd-pic.jpg');
+  }
+  
+  .slide3 {
+    background-image:  url('../../images/futd-pic2.jpg');
+  }
+  
+  .slide4 {
+    background-image:  url('../../images/futd-pic3.jpg');
+  }
+  .slide5 {
+    background-image:  url('../../images/futd-pic4.jpg');
+  }
+  
+  .carousel-caption {
+    z-index: 1;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .carousel-caption h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  /* Welcome Section */
+  .welcome-section {
+    background-color: var(--light-color);
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry cover 50%;
+  }
+  
+  .librarian-portrait {
+    padding: 1rem;
+  }
+  
+  .signature {
+    font-style: italic;
+    margin-top: 1rem;
+  }
+  
+  /* Services Section */
+  .services-section {
+    background-color: var(--gray-color);
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry cover 30%;
+  }
+  
+  .card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry cover 30%;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-title {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* History Section */
+  .history-section {
+    background-color: var(--light-color);
+  }
+  
+  /* Quotes Section */
+  .quotes-section {
+    background-color: var(--gray-color);
+    position: relative;
+    overflow: hidden;
+    padding: 4rem 0;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry cover 30%;
+  }
+  
+  .quote-card {
+    background: var(--light-color);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+    margin-bottom: 2rem;
+   
+  }
+  
+  .quote-text {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+  
+  .quote-author {
+    font-weight: bold;
+    color: var(--secondary-color);
+  }
+  
+  /* Background Books Animation */
+  .floating-background-books {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+  }
+  
+  .bg-book {
+    position: absolute;
+    font-size: 2rem;
+    color: rgba(139, 0, 0, 0.1);
+    animation: floatBackground 15s linear infinite;
+  }
+  
+  @keyframes floatBackground {
+    0% {
+      transform: translate(-100%, -100%) rotate(0deg);
+      opacity: 0;
+    }
+    20% {
+      opacity: 0.3;
+    }
+    80% {
+      opacity: 0.3;
+    }
+    100% {
+      transform: translate(200%, 200%) rotate(360deg);
+      opacity: 0;
+    }
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+  }
+  
+  .footer h4 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .footer a {
+    color: var(--light-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer a:hover {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  /* Floating Books Animation */
+  .floating-books {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    z-index: 100;
+  }
+  
+  .book {
+    font-size: 24px;
+    color: var(--primary-color);
+    margin: 10px 0;
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .book2 {
+    animation-delay: 0.5s;
+  }
+  
+  .book3 {
+    animation-delay: 1s;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  
+  /* News Section */
+  .news-card {
+    background: var(--light-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry cover 30%;
+  }
+  
+  .news-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .news-date {
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+/* History Section */
+.timeline {
+    position: relative;
+    padding: 2rem 0;
+  }
+  
+  .timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background: var(--primary-color);
+    transform: translateX(-50%);
+  }
+  
+  .timeline-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  
+  .year {
+    background: var(--primary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-right: 1rem;
+  }
+  
+  .event {
+    background: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    border-left: 3px solid var(--primary-color);
+  }
+  
+/* Welcome Section */
+.welcome-section {
+    background-color: var(--light-color);
+  }
+
+  .librarian-portrait {
+    padding: 1rem;
+  }
+  
+  .signature {
+    font-style: italic;
+    margin-top: 1rem;
+  }
+  
+/* Welcome Section Animation */
+/* [data-animate] {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  
+  [data-animate].visible {
+    opacity: 1;
+    transform: translateY(0);
+  } */
+  /* Dropdown Menu Animation */
+  .dropdown-menu {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .carousel-item {
+      height: 400px;
+    }
+  
+    .carousel-caption h2 {
+      font-size: 2rem;
+    }
+  
+    .navbar-brand {
+      font-size: 1.2rem;
+    }
+    
+    .timeline::after {
+      left: 31px;
+    }
+    
+    .timeline-item {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+    }
+    
+    .timeline-item:nth-child(even) {
+      left: 0;
+    }
+    
+    .floating-books {
+      display: none;
+    }
+    
+    .quote-text {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .carousel-item {
+      height: 300px;
+    }
+  
+    .carousel-caption h2 {
+      font-size: 1.5rem;
+    }
+  }

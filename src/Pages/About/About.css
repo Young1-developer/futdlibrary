@@ -1,0 +1,188 @@
+
+  /* Hero Section */
+  .hero {
+    background:  url('https://source.unsplash.com/1600x900/?library')  cover/center;
+    color: white;
+    text-align: center;
+    padding: 150px 0;
+    position: relative;
+  }
+  
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(139, 0, 0, 0.7);
+}
+  .hero-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    font-style: italic;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  }
+  #history {
+    background: rgb(97, 97, 97) url('../../images/logo.png') no-repeat center / cover fixed;
+    background-blend-mode: multiply;
+    color: #fff;
+  }
+  
+  .library-history{
+    animation: appear3 linear;
+    animation-timeline: view();
+    animation-range: entry cover 30%;
+  }
+  /* Timeline Styles */
+  .history-timeline {
+    position: relative;
+    padding: 20px 0;
+    
+  }
+  
+  .timeline-item {
+    position: relative;
+    padding: 20px 0 20px 50px;
+    border-left: 2px solid var(--primary-color);
+    margin-left: 20px;
+  }
+  
+  .timeline-icon {
+    position: absolute;
+    left: -15px;
+    background: white;
+    padding: 5px;
+    border-radius: 50%;
+    color: var(--primary-color);
+    font-size: 24px;
+  }
+  
+  /* Feature Cards */
+  .key-features .card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .key-features .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  }
+  
+  .key-features .card-title {
+    color: var(--primary-color);
+    font-weight: bold;
+  }
+  
+  /* Team Cards */
+  .team-introduction .card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .team-introduction .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .team-introduction .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  /* Footer Styles */
+  .social-links a {
+    font-size: 24px;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    color: var(--accent-color) !important;
+  }
+  
+  footer ul li {
+    margin-bottom: 10px;
+  }
+  
+  footer i {
+    margin-right: 10px;
+  }
+  
+  /* Scroll to Top Button */
+  .scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: var(--primary-color);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    z-index: 1000;
+    transition: background-color 0.3s, transform 0.3s;
+    padding: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+  
+  .scroll-to-top:hover {
+    background: #0056b3;
+    transform: translateY(-3px);
+  }
+  
+  .scroll-to-top i {
+    line-height: 40px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero {
+      padding: 100px 0;
+    }
+  
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero p {
+      font-size: 1.2rem;
+    }
+  
+    .timeline-item {
+      padding-left: 30px;
+    }
+  }
+  
+  /* Animation Classes */
+  .fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  
+  .fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }

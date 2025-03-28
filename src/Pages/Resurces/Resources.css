@@ -1,0 +1,232 @@
+
+
+/* Quick Links Section */
+.quick-links-section {
+    background-color: var(--primary-color);
+    padding: 1rem 0;
+}
+
+.quick-links-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.quick-link {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.quick-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.quick-link i {
+    margin-right: 0.5rem;
+}
+
+
+
+/* Resource Category Styles */
+.resource-category {
+    margin-bottom: 3rem;
+}
+
+.category-header {
+    background: linear-gradient(to right, rgba(139, 0, 0, 0.1), transparent);
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry cover 30%;
+}
+
+.category-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-right: 1.5rem;
+    width: 80px;
+    height: 80px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.category-info h2 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.category-info p {
+    color: #666;
+    margin-bottom: 0;
+}
+
+/* Resource Item Styles */
+.resource-card {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    height: 100%;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry cover 30%;
+}
+
+.resource-card:hover {
+    transform: translateY(-5px);
+}
+
+.resource-icon {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.resource-card h4 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.resource-card p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.resource-meta {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.meta-item {
+    display: flex;
+    align-items: start;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.meta-item:last-child {
+    margin-bottom: 0;
+}
+
+.meta-label {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-right: 0.5rem;
+    min-width: 100px;
+}
+
+.meta-value {
+    color: #666;
+}
+
+.access-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.access-btn:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+/* Research Guide Styles */
+.guide-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.guide-card:hover {
+    transform: translateY(-5px);
+}
+
+.guide-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.guide-content {
+    padding: 1.5rem;
+}
+
+.guide-title {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.guide-meta {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.guide-meta i {
+    color: var(--primary-color);
+    margin-right: 0.5rem;
+}
+
+.tag {
+    display: inline-block;
+    background: #f8f9fa;
+    color: var(--primary-color);
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 991.98px) {
+    .category-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .category-icon {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .quick-link {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .resource-card {
+        margin-bottom: 1.5rem;
+    }
+}
