@@ -75,7 +75,7 @@ const Navbar = () => {
               Resources
               </Link>
               <ul className="dropdown-menu dropdown-menu-dark" aria-labelledby="resourcesDropdown">
-                <li><Link className="dropdown-item" to="resources"  target="__blank" rel='noopener noreferrer'>General Resources</Link></li>
+                <li><Link className="dropdown-item" to="resources" >General Resources</Link></li>
                 <li><Link className="dropdown-item" to="#" target="__blank" rel='noopener noreferrer'>Futd Library YouTube</Link></li>
              
                {/* Free Databases - Click to Open */}
@@ -90,6 +90,8 @@ const Navbar = () => {
                     <ul className="dropdown-menu dropdown-menu-dark">
                       <li><Link className="dropdown-item" to="https://guides.nyu.edu/civilengineering/transportation?">Civil and Urban Engineering</Link></li>
                       <li><Link className="dropdown-item" to="https://udmercy.libguides.com/transportationengineering">Transportation Engineering</Link></li>
+                      <li><Link className='dropdown-item' to="https://www.coursera.org/courses?query=transport" target='__blank' rel='noopener noreferrer'>Transportation Free courses by Cusera</Link></li>
+                      <li><Link className='dropdown-item' to="https://alison.com/course/an-introduction-to-transport-management-systems?utm_source=google&utm_medium=cpc&utm_campaign=Performance-Max_Tier-4_Careers&gad_source=1&gbraid=0AAAAADt7cD1OxCJnyFry9Sb7Y2MX-O65T&gclid=Cj0KCQjwtpLABhC7ARIsALBOCVpv3RquQlC5Z2scnkYjwC3KQhOjdxFr6r3X1fR-Di9IASMsbbWUOHEaAsXSEALw_wcB#google_vignette" target='__blank' rel='noopener noreferrer'>Free Transportation Management By Alison</Link></li>
                       <li><Link className="dropdown-item" to="#">Public Services</Link></li>
                       <li><Link className="dropdown-item" to="#">Digital Initiatives</Link></li>
                       <li><Link className="dropdown-item" to="#">Special Collections</Link></li>

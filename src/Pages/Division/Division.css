@@ -8,9 +8,7 @@
     transition: transform 0.3s ease;
     overflow: hidden;
     height: 100%;
-    animation: appear3 linear;
-    animation-timeline:view();
-    animation-range: entry cover 30%;
+   
 }
 
 .division-card:hover {

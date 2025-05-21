@@ -1,11 +1,13 @@
 import React from 'react'
 import ServicesCard from './ServicesCard'
-
+import AnimatedComponent from '../../components/AnimatedComponent/AnimatedComponent'
 
 const ServicesRender = () => {
   return (
     <div>
-    <ServicesCard />
+      <AnimatedComponent type='appear2'>
+      <ServicesCard />
+      </AnimatedComponent>
     </div>
   )
 }

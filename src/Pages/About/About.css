@@ -39,11 +39,7 @@
     color: #fff;
   }
   
-  .library-history{
-    animation: appear3 linear;
-    animation-timeline: view();
-    animation-range: entry cover 30%;
-  }
+ 
   /* Timeline Styles */
   .history-timeline {
     position: relative;

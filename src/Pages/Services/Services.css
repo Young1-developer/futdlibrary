@@ -47,9 +47,7 @@
     padding: 1.5rem;
     background: linear-gradient(to right, rgba(139, 0, 0, 0.1), transparent);
     border-radius: 10px;
-    animation: appear linear;
-    animation-timeline:view();
-    animation-range: entry cover 30%;
+    
 }
 
 .category-icon {
@@ -87,9 +85,7 @@
     transition: transform 0.3s ease;
     display: flex;
     flex-direction: column;
-    animation: appear linear;
-    animation-timeline:view();
-    animation-range: entry cover 30%;
+    
 }
 
 .service-card:hover {

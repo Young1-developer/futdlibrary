@@ -41,9 +41,7 @@
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     overflow: hidden;
-    animation: appear2 linear;
-    animation-timeline: view();
-    animation-range: entry cover 30%;
+   
 }
 
 .staff-card:hover {

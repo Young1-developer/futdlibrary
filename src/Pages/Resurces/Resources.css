@@ -48,9 +48,7 @@
     margin-bottom: 2rem;
     display: flex;
     align-items: center;
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry cover 30%;
+
 }
 
 .category-icon {
@@ -85,9 +83,7 @@
     height: 100%;
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry cover 30%;
+    
 }
 
 .resource-card:hover {

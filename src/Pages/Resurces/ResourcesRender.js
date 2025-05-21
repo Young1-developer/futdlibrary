@@ -2,6 +2,9 @@ import React from 'react'
 import QuickLinksCard from './QuickLinksCard'
 import ResourcesCard from './ResourcesCard'
 import ResourcesGuideCard from './ResourcesGuideCard'
+import AnimatedComponent from '../../components/AnimatedComponent/AnimatedComponent'
+
+
 
 const ResourcesRender = () => {
   return (
@@ -18,7 +21,9 @@ const ResourcesRender = () => {
         <section className="resources-section py-5">
         <div className="container">
             <div id="resources-container">
-             <ResourcesCard />
+                <AnimatedComponent type='appear3'>
+                <ResourcesCard />
+                </AnimatedComponent>
             </div>
         </div>
     </section>
@@ -29,7 +34,9 @@ const ResourcesRender = () => {
         <div className="container">
             <h2 className="section-title text-center mb-4">Featured Research Guides</h2>
             <div id="guides-container">
+                <AnimatedComponent type='appear2'>
               <ResourcesGuideCard />
+                </AnimatedComponent>
             </div>
         </div>
     </section>

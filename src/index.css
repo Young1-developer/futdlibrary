@@ -10,7 +10,9 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
+ }
+
+ /*
 @keyframes appear {
   from{
       opacity: 0;
@@ -56,4 +58,4 @@ code {
       opacity:1;
       scale: 1;
   }
-}
+} */

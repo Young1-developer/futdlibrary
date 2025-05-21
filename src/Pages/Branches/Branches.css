@@ -41,9 +41,7 @@
     transition: transform 1s ease;
     overflow: hidden;
     height: 100%;
-    animation: appear1 linear;
-    animation-timeline: view();
-    animation-range: entry cover 30%;
+   
 }
 
 .branch-card:hover {
