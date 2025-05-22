@@ -47,6 +47,9 @@
     padding: 1.5rem;
     background: linear-gradient(to right, rgba(139, 0, 0, 0.1), transparent);
     border-radius: 10px;
+    animation: appaer linear;
+    animation-range: entry 30% cover ;
+    animation-timeline: view();
     
 }
 
