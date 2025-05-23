@@ -23,7 +23,7 @@ const Welcome = () => {
           </div>
         </div>
         <div class="col-md-8">
-          <h2>Welcome from the University Librarian</h2>
+          <h2>Welcome from the University Library</h2>
           <p class="lead">Dear Students and Faculty,</p>
           <p>Welcome to our university library system. We are committed to providing you with the resources and support needed for your academic success. Our dedicated team is here to assist you in your research and learning journey.</p>
           <p class="signature">Dr. ---<br />University Librarian</p>
